@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const API = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://swift-a.herokuapp.com/",
 });
 
 export const getTimelinePosts = (id) => API.get(`/post/${id}/timeline`);
