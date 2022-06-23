@@ -1,0 +1,32 @@
+.feed-share {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--cardColor);
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+.feed-share > img {
+  width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.icons {
+  display: flex;
+
+  gap: 1.5rem;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex img {
+  margin-right: 20px;
+}
+.flex h5 {
+  margin-right: 20px;
+  font-size: 1rem;
+}

@@ -1,0 +1,89 @@
+.login {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f2f5;
+  overflow-y: scroll;
+}
+.login-wrapper {
+  width: 70%;
+  display: flex;
+}
+.login-wrapper-left {
+  display: flex;
+  flex: 1;
+  margin-top: 120px;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.login-logo {
+  font-size: 3.125rem;
+  font-weight: 800;
+  color: #1775ee;
+  margin-bottom: 10px;
+}
+.login-desc {
+  font-size: 1.5rem;
+}
+.login-wrapper-right {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-box2 {
+  padding: 50px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.login-input {
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  font-size: 1.125rem;
+  margin: 10px;
+  outline: none;
+}
+.login-botton {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  outline: none;
+  margin: 5px;
+  background-color: #1775ee;
+  font-weight: 500;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.login-f-paw {
+  text-align: center;
+  color: #1775ee;
+}
+.login-reg-buton {
+  width: 90%;
+  align-self: center;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  outline: none;
+  margin-top: 5px;
+  background-color: #42b72a;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+@media screen and(max-width:500px) {
+  .login-wrapper-left {
+    margin-top: 2000px;
+  }
+}

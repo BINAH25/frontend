@@ -1,0 +1,5 @@
+.home {
+  display: grid;
+  position: relative;
+  grid-template-columns: 18rem auto 20rem;
+}
