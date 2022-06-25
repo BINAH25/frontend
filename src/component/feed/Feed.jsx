@@ -22,6 +22,7 @@ export default function Feed() {
       {posts.map((feed, id) => {
         return <FeedShare data={feed} key={id} />;
       })}
+      
     </div>
   );
 }
