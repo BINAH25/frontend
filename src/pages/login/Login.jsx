@@ -7,6 +7,7 @@ import { logIn } from "../../actions/AuthActions";
 
 export default function Login() {
   const loading = useSelector((state) => state.AuthReducer.loading);
+  const error = useSelector((state) => state.AuthReducer.error);
   const dispatch = useDispatch();
   const [data, setData] = useState({
     username: "",
@@ -61,6 +62,16 @@ export default function Login() {
                 placeholder="Password"
                 required
               />
+              {error && (
+                <span
+                  style={{
+                    color: "red",
+                    fontSize: "0.8rem",
+                  }}
+                >
+                  * invalid Credentials
+                </span>
+              )}
               <button className="button login-botton" type="submit">
                 {loading ? "loading..." : "Log In"}
               </button>
